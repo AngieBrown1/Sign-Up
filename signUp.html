@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugs and Paws</title>
+    <link href="./signUp.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Hugs and Wags Volunteer Sign Up Sheet</h1>
+    <div class="tasksList">
+        <p>Hello! Welcome to the online Hugs and Paws Volunteer Sign Up Sheet. We are so excited for you to join our team of volunteers! Thare are multiple tasks and days you can sign up for.</p>
+        <h3>Volunteer tasks</h3>
+        <ol>
+            <li>Dog's Best Friend</li>
+            <ul>
+                <li class="info">Taking dogs for walks and "Doggy fun days" as well as general companionship</li>
+            </ul>
+            <li>Kennel Cleaning</li>
+            <li>Dog Training</li>
+            <ul>
+                <li class="info">*Notice: Dog Training task requires volunteers take and pass dog training classes</li>
+            </ul>
+        </ol>
+        <p>Please sign up for your task, hours, and days using the form below. We are very greatful for your help, and our animals cannot wait to meet you!</p>
+    </div>
+
+    <img src="https://img-v3.deepdreamgenerator.com/6608466/wbnv2o_16e7ce41e16ead8fa90b6a6722c3debf573b00b9.jpg" height="500px" alt="Happy Dogs">
+
+    <form class="form" action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec"
+        method="post">
+        <div id="tasks">
+            <label for="yourName">Enter your name: </label>
+            <input id="yourName" name="name" type="text" required> 
+        </div>
+        
+        <div>
+            <label for="dogsBestFriend"> Dog's Best Friend</label>
+            <input id="dogsBestFriend" type="radio" name="volunteerType" value="DBF">
+        
+            <label for="kennelCleaning">Kennel Cleaning</label>
+            <input id="kennelCleaning" type="radio" name="volunteerType" value="KC">
+
+            <lable for="dogTraining">Dog Training</lable>
+            <input id="dogTraining" type="radio" name="volunteerType" value="DT">
+        </div>
+
+        <div id="dogClasses">
+            <legend>Have you taken the dog training classes?</legend>
+                
+                <label for="hasTaken">Yes</label>
+                <input id="hasTaken" type="checkbox" name="answer" value="yes">
+
+                <label for="notTaken">No</label>
+                <input id="notTaken" type="checkbox" name="answer" value="no">
+        </div>
+
+        <div>
+            <label for="daySelector">Days Available</label>
+            <select id="daySelector" name="day">
+                <option value="Sun">Sunday</option>
+                <option value="M">Monday</option>
+                <option value="Tue">Tuesday</option>
+                <option value="W">Wednesday</option>
+                <option value="Th">Thursday</option>
+                <option value="F">Friday</option>
+                <option value="Sat">Saturday</option>
+            </select>
+
+            <select id="daySelector" name="day">
+                <option value="Sun">Sunday</option>
+                <option value="M">Monday</option>
+                <option value="Tue">Tuesday</option>
+                <option value="W">Wednesday</option>
+                <option value="Th">Thursday</option>
+                <option value="F">Friday</option>
+                <option value="Sat">Saturday</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="hours">Enter your available hours per week</label>
+            <input id="hours" type="number" name="hour" min="1" max="14" value="1"> 
+        </div>
+
+        <button id="button" type="submit">Submit form</button>
+    </form>
+</body>
+</html>
+<!--Writing this to have something to push because i'm having issues with github-->
